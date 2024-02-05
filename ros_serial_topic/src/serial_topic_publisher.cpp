@@ -35,7 +35,7 @@ int main(int argc, char **argv)                 // Node Main Function
       std::string data_str = ser.readline();
       //ROS_INFO("arduini send %s",data_str.c_str());
       
-      if(data_str != ""){ // Sometiems dataStr is NULL, then it triggers segment fault 
+      if(data_str != ""){ // Sometiems data_str is NULL, then it triggers segment fault 
         int data = std::stof(data_str);  // Convert string to integer
         msg.temp = (float)data;
         ROS_INFO("send msg = %f", msg.temp);        // Prints the 'data' message
