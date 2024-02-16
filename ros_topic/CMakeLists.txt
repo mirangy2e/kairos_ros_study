@@ -28,7 +28,7 @@ include_directories(
 
 add_executable(ros_topic_publisher src/ros_topic_publisher.cpp)
 add_dependencies(ros_topic_publisher ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-Target_link_libraries(ros_topic_publisher
+target_link_libraries(ros_topic_publisher
   ${catkin_LIBRARIES}
 )
 
