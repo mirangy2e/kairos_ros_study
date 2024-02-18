@@ -35,7 +35,7 @@ int main(int argc, char **argv)              // Node Main Function
   ros::NodeHandle nh;                        // Node handle declaration
 
  
-  ser.setPort("/dev/ttyUSB0");  // Replace with your serial port name
+  ser.setPort("/dev/ttyACM0");  // Replace with your serial port name
   ser.setBaudrate(115200);
   serial::Timeout timeout = serial::Timeout::simpleTimeout(1000);
   ser.setTimeout(timeout);
