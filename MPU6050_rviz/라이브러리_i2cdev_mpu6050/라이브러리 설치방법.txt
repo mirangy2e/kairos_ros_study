@@ -1,0 +1,2 @@
+I2Cdev와 MPU6050라이브러리를 아래의 경로에 배치
+C:\Users\miran\Documents\Arduino\libraries
